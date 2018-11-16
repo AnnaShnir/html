@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<
+
 	<title>Owl Personality Test</title>
 </head>
 <body>
@@ -17,6 +18,60 @@
     <p>If you wish to browse an entire collection, visit <a href="https://www.evedevore.com/" target="_blank">Eve Devore's Shop</a>.</p>
 
     <form>
+    	<div id="question-cards-wrapper">
+		    <div id="question-0"><p><h3 class="question">What color do you like the most?</h3></p>
+		    	<div class="form-check">
+				  <input class="form-check-input" type="radio" name="color" id="exampleRadios1" value="red" checked>
+				  <label class="form-check-label" for="color">
+				    Red
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="color" id="exampleRadios2" value="blue">
+				  <label class="form-check-label" for="color">
+				    Blue
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="color" id="exampleRadios2" value="option2">
+				  <label class="form-check-label" for="color">
+				    Yellow
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="color" id="exampleRadios2" value="option2">
+				  <label class="form-check-label" for="color">
+				    Orange
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="color" id="green" value="option2">
+				  <label class="form-check-label" for="color">
+				    Green
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="color" id="rainbow" value="option2">
+				  <label class="form-check-label" for="color">
+				    Rainbow
+				  </label>
+				</div>
+				<br>
+		    	
+	        <p><button type="button" onclick="test()" value="Get Value" class="btn btn-primary">Next</button></p>
+	<!--     ./ question-0   -->
+	    	</div>
+	    	<div id="question-1"></div>
+	    	<div id="question-2"></div>
+	    	<div id="question-3"></div>
+	    	<div id="question-4"></div>
+		</div>
+
+
+
+
+
+
     <h3 class="question">What color do you like the most?</h3>
     
     <div class="col-sm-12">
@@ -191,5 +246,7 @@
 	</form>
 
 </div>
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
