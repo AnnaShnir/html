@@ -14,9 +14,7 @@ function answerQuestion0() {
 // remove question0 card:
 	var questionWrapper = document.getElementById("question-cards-wrapper");
 	questionWrapper.removeChild(questionWrapper.childNodes[1]);
-	questionWrapper;
-
-
+	document.getElementById("question-1").style.display ="block";
 
 	// the problem here is inability of the user to go back and change the answer AND avoid repeating elements in the array. To solve this problem, push all var-s into the array at the end, after all questions have been answered and answer variables defined
 	owl.push(question0Value);
@@ -31,8 +29,7 @@ function answerQuestion1() {
 // remove question0 card:
 	var questionWrapper = document.getElementById("question-cards-wrapper");
 	questionWrapper.removeChild(questionWrapper.childNodes[2]);
-	questionWrapper;
-
+	document.getElementById("question-2").style.display ="block";
 
 
 	// the problem here is inability of the user to go back and change the answer AND avoid repeating elements in the array. To solve this problem, push all var-s into the array at the end, after all questions have been answered and answer variables defined
@@ -48,8 +45,7 @@ function answerQuestion2() {
 // remove question0 card:
 	var questionWrapper = document.getElementById("question-cards-wrapper");
 	questionWrapper.removeChild(questionWrapper.childNodes[3]);
-	questionWrapper;
-
+	document.getElementById("question-3").style.display ="block";
 
 
 	// the problem here is inability of the user to go back and change the answer AND avoid repeating elements in the array. To solve this problem, push all var-s into the array at the end, after all questions have been answered and answer variables defined
@@ -65,7 +61,9 @@ function answerQuestion3() {
 // remove question0 card:
 	var questionWrapper = document.getElementById("question-cards-wrapper");
 	questionWrapper.removeChild(questionWrapper.childNodes[4]);
-	questionWrapper;
+
+	// use code block below for adding more questions in future:
+	// document.getElementById("question-4").style.display ="block";
 
 
 
