@@ -21,7 +21,7 @@
     	<div id="question-cards-wrapper">
 		    <div id="question-0"><p><h3 class="question">What color do you like the most?</h3></p>
 		    	<div class="form-check" id="form-check-red">
-				  <input class="form-check-input" type="radio" name="color" id="red" value="redOwl">
+				  <input class="form-check-input" type="radio" name="color" id="red" value="red">
 				  <label class="form-check-label" for="color">
 				    Red
 				  </label>
@@ -58,191 +58,111 @@
 				</div>
 				<br>
 		    	
-	        <p><button type="button" onclick="answerQuestion1()" value="Get Value" class="btn btn-primary">Next</button></p>
+	        <p><button type="button" onclick="answerQuestion0()" value="Get Value" class="btn btn-primary">Next</button></p>
 	<!--     ./ question-0   -->
 	    	</div>
-	    	<div id="question-1"></div>
-	    	<div id="question-2"></div>
-	    	<div id="question-3"></div>
-	    	<div id="question-4"></div>
-		</div>
 
+	    	<div id="question-1"><p><h3 class="question">What is your favorite pastime?</h3></p>
+		    	<div class="form-check" id="form-check-red">
+				  <input class="form-check-input" type="radio" name="pastime" id="beach" value="beach">
+				  <label class="form-check-label" for="pastime">
+				    Sand/Beach/Ocean Waves
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="pastime" id="trees" value="trees">
+				  <label class="form-check-label" for="pastime">
+				    Forest/Trees/Dimly Lit Path
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="pastime" id="city" value="yellow">
+				  <label class="form-check-label" for="pastime">
+				    Noisy City/Noisy Company/Vibrant Conversation
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="pastime" id="book" value="book">
+				  <label class="form-check-label" for="pastime">
+				    Book/Cup of Tea/Glass of Wine/Or TV with snacks and 500 channels
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="pastime" id="challenge" value="challenge">
+				  <label class="form-check-label" for="pastime">
+				    New Challenge Every Week
+				  </label>
+				</div>
+				<br>
+		    	
+	        <p><button type="button" onclick="answerQuestion1()" value="Get Value" class="btn btn-primary">Next</button></p>
+	<!--     ./ question-1   -->	    		
+	    	</div>
 
+	    	<div id="question-2"><p><h3 class="question">Who would you rather meet?</h3></p>
+	    		<div class="form-check" id="form-check-red">
+				  <input class="form-check-input" type="radio" name="meet" id="famous" value="famous">
+				  <label class="form-check-label" for="meet">
+				    Famous person
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="meet" id="historical" value="historical">
+				  <label class="form-check-label" for="meet">
+				    Historical Figure
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="meet" id="fairytale" value="fairytale">
+				  <label class="form-check-label" for="meet">
+				    Fairy tale character
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="meet" id="et" value="et">
+				  <label class="form-check-label" for="meet">
+				    Extraterrestial
+				  </label>
+				</div>
+				<br>
+		    	
+	        <p><button type="button" onclick="answerQuestion2()" value="Get Value" class="btn btn-primary">Next</button></p>
+	<!--     ./ question-2   -->	    
+	    	</div>
 
+	    	<div id="question-3"><p><h3 class="question">What makes you feeling accomplished?</h3></p>
+	    	<div class="form-check">
+				  <input class="form-check-input" type="radio" name="accomp" id="house" value="house">
+				  <label class="form-check-label" for="accomp">
+				    Building a house
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="accomp" id="cake" value="cake">
+				  <label class="form-check-label" for="accomp">
+				    Making a cake
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="accomp" id="social" value="social">
+				  <label class="form-check-label" for="accomp">
+				    24-hour social media diet
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="accomp" id="snooze" value="snooze">
+				  <label class="form-check-label" for="accomp">
+				    Snooze the alarm 71 time and still make it to work.
+				  </label>
+				</div>
+				<br>
+		    	
+	        <p><button type="button" onclick="answerQuestion3()" value="Get Value" class="btn btn-primary">Next</button></p>
 
-
-
-    <h3 class="question">What color do you like the most?</h3>
-    
-    <div class="col-sm-12">
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Red
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Blue
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Yellow
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Orange
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Green
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Give me the rainbow and keep it coming
-          </label>
-        </div>
-
-    </div>
-    <br/>
-    <br/>
-
-    <h3 class="question">What is your favorite pastime?</h3>
-    
-    <div class="col-sm-12">
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Sand/Beach/Ocean Waves
-          </label>
-        </div>
-        
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Forest/Trees/Dimly Lit Path
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Noisy City/Noisy Company/Vibrant Conversation
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Book/Cup of Tea/Glass of Wine/Or TV with snacks and 500 channels
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            New Challenge Every Week
-          </label>
-        </div>
-
-    </div>
-
-    <h3 class="question">Who would you rather meet?</h3>
-    
-    <div class="col-sm-12">
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Famous Person
-          </label>
-        </div>
-        
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Historical Figure
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Fairy Tale Character
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Extraterrestial
-          </label>
-        </div>
-
-    </div>
-
-    <h3 class="question">What makes you feel accomplished?</h3>
-    
-    <div class="col-sm-12">
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Building a house
-          </label>
-        </div>
-        
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Making a cake
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            24-hour social media diet
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Snooze the alarm 71 time and still make it to work.
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Green
-          </label>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="o1" value="">
-            Give me the rainbow and keep it coming!
-          </label>
-        </div>
-
-    </div>
+	<!--     ./ question-3   -->
+	    	</div>
+<!-- 	./ question cards wrapper  -->		
+		</div> 
 	</form>
 
 </div>
