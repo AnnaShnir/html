@@ -20,9 +20,10 @@ function answerQuestion0() {
 	questionWrapper.removeChild(questionWrapper.childNodes[1]);
 	document.getElementById("question-1").style.display ="block";
 
-	// the problem here is inability of the user to go back and change the answer AND avoid repeating elements in the array. To solve this problem, push all var-s into the array at the end, after all questions have been answered and answer variables defined
+// array not needed, remove after testing:
 	answer.push(question0Value);
-	console.log(answer);
+	
+	console.log(question0Value);
 	
 };
 
@@ -38,7 +39,8 @@ function answerQuestion1() {
 
 	// the problem here is inability of the user to go back and change the answer AND avoid repeating elements in the array. To solve this problem, push all var-s into the array at the end, after all questions have been answered and answer variables defined
 	answer.push(question1Value);
-	console.log(answer);
+
+	console.log(question1Value);
 	
 };
 
@@ -54,7 +56,7 @@ function answerQuestion2() {
 
 	// the problem here is inability of the user to go back and change the answer AND avoid repeating elements in the array. To solve this problem, push all var-s into the array at the end, after all questions have been answered and answer variables defined
 	answer.push(question2Value);
-	console.log(answer);
+	console.log(question2Value);
 	
 };
 
@@ -72,11 +74,26 @@ function answerQuestion3() {
 
 	// the problem here is inability of the user to go back and change the answer AND avoid repeating elements in the array. To solve this problem, push all var-s into the array at the end, after all questions have been answered and answer variables defined
 	answer.push(question3Value);
-	console.log(answer);
-	
+	console.log(question3Value);
+	testResult();
 };
 
+	// CALCULATE OWL RESULT:
+function testResult(){
 
+	var result = answer.join('');
+
+	if (result == "Raaa" || "Rada" || "Raab" || "Radb" || "Rcba" || "Rcca" || "Rcbb" || "Rccb" || "Rabc" || "Racc" || "Rabd" || "Rabc"){
+		//create div with display:hidden for result:
+		//style the winner in accordance to the owl-result
+		// document.getElementById("winning-owl").style.display ="block";
+		// document.getElementById("winning-owl").addClass("style-for-winner");
+		console.log("New York Owl");
+	}
+	elseif (){
+
+	}
+}
 
 
 
