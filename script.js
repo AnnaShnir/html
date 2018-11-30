@@ -90,9 +90,7 @@ function testResult(){
 		// document.getElementById("winning-owl").addClass("style-for-winner");
 		console.log("New York Owl");
 	}
-	elseif (){
-
-	}
+	
 }
 
 
