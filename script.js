@@ -82,41 +82,99 @@ function answerQuestion3() {
 function testResult(){
 
 	var result = answer.join('');
+	// console.log(typeof result);
 
-	if (result == "Raaa" || "Rada" || "Raab" || "Radb" || "Rcba" || "Rcca" || "Rcbb" || "Rccb" || "Rabc" || "Racc" || "Rabd" || "Rabc"){
-		//create div with display:hidden for result:
-		//style the winner in accordance to the owl-result
-		// document.getElementById("winning-owl").style.display ="block";
-		// document.getElementById("winning-owl").addClass("style-for-winner");
+	if (result == "Raaa" || result == "Rada" || result == "Raab" || result == "Radb" || result == "Rcba" || result == "Rcca" || result == "Rcbb" || result == "Rccb" || result == "Rabc" || result == "Racc" || result == "Rabd" || result == "Rabc"){
 		console.log("New York Owl");
 	}
-	else if(result == "Rcaa" || "Rcab" || "Rcda" || "Rcdb" || "RNBeaa" || "RNBeaa" || "RNBeab" || "RNBeda" || "RNBedb" || "Raac" || "Raad" || "Radc" || "Radd" || "Rcac" || "Rcad" || "Rcdc" ||"Rcdd" || "RNBcbc" || "RNBcbd" || "RNBccc" || "RNBcdd"){
+	else if(result == "Rcaa" || result == "Rcab" || result == "Rcda" || result == "Rcdb" || result == "RNBeaa" || result == "RNBeaa" || result == "RNBeab" || result == "RNBeda" || result == "RNBedb" || result == "Raac" || result == "Raad" || result == "Radc" || result == "Radd" || result == "Rcac" || result == "Rcad" || result == "Rcdc" || result == "Rcdd" || result == "RNBcbc" || result == "RNBcbd" || result == "RNBccc" || result == "RNBcdd"){
 		console.log("Geisha Owl");
 	}
-	else if(result == "Rdaa" || "Rdab" || "Rdda" || "Rddb" || "Rbba" || "Rbbb" || "Rdac" || "Rdad"  || "Rddc" || "Rddd"){
+	else if(result == "Rdaa" || result == "Rdab" || result == "Rdda" || result == "Rddb" || result == "Rbba" || result == "Rbbb" || result == "Rdac" || result == "Rdad"  || result == "Rddc" || result == "Rddd"){
 		console.log("Moonlight Owl");
 	}
-	else if(result == "Reaa" || "Reab" || "Reda" || "Rebd" || "Reba" || "Rebb" || "Reca" || "Recb"  || "Oeaa" || "Oeab" || "Oeda" || "Oedb" || "Occa" || "Occb" || "Ocba" || "Ocbb" || "Reac" || "Read" || "Redc" || "Redd" || "Rcbc" || "Rcbd" || "Rccc" || "Rccd" || "Oaac" || "Oaad" || "Oadc" || "Oadd" || "Oeac" || "Oead" || "Oedc" || "Oedd" || "Ocbc" || "Ocbd" || "Occc" || "Occd"){
+	else if(result == "Reaa" || result == "Reab" || result == "Reda" || result == "Rebd" || result == "Reba" || result == "Rebb" || result == "Reca" || result == "Recb"  || result == "Oeaa" || result == "Oeab" || result == "Oeda" || result == "Oedb" || result == "Occa" || result == "Occb" || result == "Ocba" || result == "Ocbb" || result == "Reac" || result == "Read" || result == "Redc" || result == "Redd" || result == "Rcbc" || result == "Rcbd" || result == "Rccc" || result == "Rccd" || result == "Oaac" || result == "Oaad" || result == "Oadc" || result == "Oadd" || result == "Oeac" || result == "Oead" || result == "Oedc" || result == "Oedd" || result == "Ocbc" || result == "Ocbd" || result == "Occc" || result == "Occd"){
 		console.log("Phonix Owl");
 	}
-	else if(result == "Raba" || "Rabb" || "Raca" || "Racb" || "Yaba" || "Yabb" || "Yaca" || "Yacb"  || "Rebc" || "Rebd" || "Recc" || "Recd" || "Yeac" || "Yead" || "Yedc" || "Yedd" || "Yabc" || "Yabd" || "Yacc" || "Yacd"){
+	else if(result == "Raba" || result == "Rabb" || result == "Raca" || result == "Racb" || result == "Yaba" || result == "Yabb" || result == "Yaca" || result == "Yacb"  || result == "Rebc" || result == "Rebd" || result == "Recc" || result == "Recd" || result == "Yeac" || result == "Yead" || result == "Yedc" || result == "Yedd" || result == "Yabc" || result == "Yabd" || result == "Yacc" || result == "Yacd"){
 		console.log("Spartan Owl");
 	}
-	else if(result == "Baaa" || "Baab" || "Bada" || "Badb" || "Bcba" || "Bcbb" || "Bcca" || "Bccb"  || "Beba" || "Bebb" || "Beca" || "Becb" || "Bcac" || "Bcad" || "Bcdc" || "Bcdd" || "Beac" || "Bead" || "Bedc" || "Bedd"){
+	else if(result == "Baaa" || result == "Baab" || result == "Bada" || result == "Badb" || result == "Bcba" || result == "Bcbb" || result == "Bcca" || result == "Bccb"  || result == "Beba" || result == "Bebb" || result == "Beca" || result == "Becb" || result == "Bcac" || result == "Bcad" || result == "Bcdc" || result == "Bcdd" || result == "Beac" || result == "Bead" || result == "Bedc" || result == "Bedd"){
 		console.log("Sailor Owl");
 	}
-	else if(result == "" || "" || "" || "" || "" || "" || "" || ""  || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || ""){
-		console.log("Upstate Owl");
+	else if(result == "Bbaa" || result == "Bbab" || result == "Bbda" ||result == "Bbdb" || result == "RNBaba" || result == "RNBabb" || result == "RNBdba" || result == "RNBdbb" || result == "RNBdca" || result == "RNBdcb" || result == "Bcbc" || result == "Bcbd" || result == "Bccc" || result == "Bccd" || result == "RNBdac" ||result == "RNBdad" || result == "RNBddc" || result == "RNBddd" || result == "RNBabc" || result == "RNBabd" || result == "RNBacc" || result == "RNBacd"){
+	 	console.log("Upstate Owl");
 	}
-	else if(result == "" || "" || "" || "" || "" || "" || "" || ""  || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || ""){
-		console.log("Moonlight Owl");
+	else if(result == "Bcaa" || result == "Bcab" || result == "Bcda" ||result == "Bcdb" || result == "Bbba" || result == "Bbbb" || result == "Bbca" || result == "Bbcb" || result == "Bbac" || result == "Bbad" || result == "Bbdc" || result == "Bbdd"){
+	 	console.log("Coffee Owl");
 	}
-	else if(result == "" || "" || "" || "" || "" || "" || "" || ""  || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || ""){
-		console.log("Moonlight Owl");
+	else if(result == "Bdaa" || result == "Bdab" || result == "Bdda" ||result == "Bddb" || result == "Bdac" || result == "Bdad" || result == "Bddc" || result == "Bddd" || result == "Bbbc" || result == "Bbbd" || result == "Bbcc" || result == "Bbcd"){
+	 	console.log("Cozy Owl");
 	}
-	else if(result == "" || "" || "" || "" || "" || "" || "" || ""  || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || "" || ""){
-		console.log("Moonlight Owl");
+	else if(result == "Beaa" || result == "Beab" || result == "Beda" ||result == "Bedb" || result == "Baac" || result == "Baad" || result == "Badc" || result == "Badd"){
+	 	console.log("Stormchaser Owl");
 	}
+	else if(result == "Baba" || result == "Babb" || result == "Baca" ||result == "Bacb" || result == "Babc" || result == "Babd" || result == "Bacc" || result == "Bacd" || result == "Bebc" || result == "Bebd" || result == "Becc" || result == "Becd"){
+	 	console.log("Samurai Owl");
+	}
+	else if(result == "Bdba" || result == "Bdbb" || result == "Bdca" ||result == "Bdcb" || result == "Bdbc" || result == "Bdcc" || result == "Bdcd"){
+	 	console.log("Winter Queen Owl");
+	}
+	else if(result == "Yaaa" || result == "Yaab" || result == "Yada" ||result == "Yadb" || result == "Ycba" || result == "Ycbb" || result == "Ycca" || result == "Yccb" || result == "Yeba" || result == "Yebb" || result == "Yeca" || result == "Yecb" || result == "Oaaa" || result == "Oaab" || result == "Oada" ||result == "Oadb" || result == "Ocaa" || result == "Ocda" || result == "Ocda" || result == "Ocdb" || result == "Yaac" || result == "Yaad" || result == "Yadc" || result == "Yadd"  || result == "Yebc" || result == "Yebd" || result == "Yecc" ||result == "Yecd" || result == "Ocac" || result == "Ocad" || result == "Ocdc" || result == "Ocdd"){
+	 	console.log("Zesty Owl");
+	}
+	else if(result == "Ybaa" || result == "Ybab" || result == "Ybda" ||result == "Ybdb" || result == "Ybbc" || result == "Ybbd" || result == "Ybcc" || result == "Ybcd"){
+	 	console.log("Forest Fairy Owl");
+	}
+	else if(result == "Ycaa" || result == "Ycab" || result == "Ycda" ||result == "Ycdb" || result == "Ybba" || result == "Ybbb" || result == "Ybca" || result == "Ybcb" || result == "Ybac" || result == "Ybad" || result == "Ybdc" || result == "Ybdd" || result == "Ycbc" || result == "Ycbd" || result == "Yccc" ||result == "Yccd"){
+	 	console.log("Vitruvian Owl");
+	}
+	else if(result == "Ydaa" || result == "Ydab" || result == "Ydda" ||result == "Yddb" || result == "Ydba" || result == "Ydbb" || result == "Ydca" || result == "Ydcb" || result == "Ydac" || result == "Ydad" || result == "Yddc" || result == "Yddd" || result == "Ydbc" || result == "Ydbd" || result == "Ydcc" ||result == "Ydcd"){
+	 	console.log("Rainy Day Owl");
+	}
+	else if(result == "Yeaa" || result == "Yeab" || result == "Yeda" ||result == "Yedb" || result == "Ycac" || result == "Ycad" || result == "Ycdc" || result == "Ycdd"){
+	 	console.log("Chef Owl");
+	}
+	else if(result == "Obaa" || result == "Obab" || result == "Obda" ||result == "Obdb" || result == "Odaa" || result == "Odab" || result == "Odda" || result == "Oddb" || result == "Oeba" || result == "Oebb" || result == "Oeca" || result == "Oecb" || result == "Obac" || result == "Obad" || result == "Obdc" ||result == "Obdd" || result == "Odac" || result == "Odad" || result == "Oddc" || result == "Oddd" || result == "Oebc" || result == "Oebd" || result == "Oecc" || result == "Oecd"){
+	 	console.log("Yogi Sage Owl");
+	}
+	else if(result == "Oaba" || result == "Oabb" || result == "Oaca" ||result == "Oacb" || result == "Oabc" || result == "Oabd" || result == "Oacc" ||result == "Oacd"){
+	 	console.log("Summer Owl");
+	}
+	else if(result == "Obba" || result == "Obbb" || result == "Obca" ||result == "Obcb" || result == "Obbc" || result == "Obbd" || result == "Obcc" || result == "Obdd"){
+	 	console.log("Owlstein Owl");
+	}
+	else if(result == "Odba" || result == "Odbb" || result == "Odca" ||result == "Odcb" || result == "Odbc" || result == "Odbd" || result == "Odcc" || result == "Odcd"){
+	 	console.log("Pumpkin Owl");
+	}
+	else if(result == "Gaaa" || result == "Gaab" || result == "Gada" ||result == "Gadb" || result == "Gada" || result == "Gadb" || result == "Geaa" || result == "Geab" || result == "Geda" || result == "Gedb" || result == "Gcba" || result == "Gcbb" || result == "Gcca" || result == "Gccb" || result == "Geba" ||result == "Gebb" || result == "Geca" || result == "Gecb" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Pirate Owl");
+	}
+	else if(result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Upstate Owl");
+	}
+	else if(result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Upstate Owl");
+	}
+	else if(result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Upstate Owl");
+	}
+	else if(result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Upstate Owl");
+	}
+	else if(result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Upstate Owl");
+	}
+	else if(result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Upstate Owl");
+	}
+	else if(result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""  || result == "" || result == "" || result == "" ||result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == "" || result == ""){
+	 	console.log("Upstate Owl");
+	}
+	else {
+		console.log("Hawaii Owl");
+	};
+
 
 	
 	// use switch statement for break purposes:
