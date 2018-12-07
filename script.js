@@ -201,14 +201,11 @@ function testResult(){
 		console.log("Hawaii Owl");
 		var owl = "Hawaii Owl";
 		var image = "<img src='https://static1.squarespace.com/static/547e86a0e4b0c76689c8ba6e/58ffc9f1bebafb65a517e693/59165069f5e2317b6a22e9e8/1494634607552/Hawaiian-owl-art-print-eve-devore.jpg?format=300w'></img>";
-		var node1 = document.getElementById("container");
-		node1.appendChild(image);
 	};
 
 alert("You are a " + owl);
-var node1 = document.getElementById("container");
-node1.appendChild(image);
-
+var node = document.getElementById("question-cards-wrapper");
+node.appendChild(image);
 
 
 	
