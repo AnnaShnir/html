@@ -78,7 +78,10 @@
 .owl {
     height: 150px;
     width: 150px;
-    background-image: url("https://static1.squarespace.com/static/547e86a0e4b0c76689c8ba6e/58ffc9f1bebafb65a517e693/59165069f5e2317b6a22e9e8/1494634607552/Hawaiian-owl-art-print-eve-devore.jpg?format=300w");
+    position: center;
+/*    background-image: url("https://static1.squarespace.com/static/547e86a0e4b0c76689c8ba6e/58ffc9f1bebafb65a517e693/59165069f5e2317b6a22e9e8/1494634607552/Hawaiian-owl-art-print-eve-devore.jpg?format=300w");
+*/
+    background-color: aquamarine;
     background-position: center;
     background-size: cover;
 }

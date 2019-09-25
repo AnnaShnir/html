@@ -202,15 +202,18 @@ function testResult(){
 		console.log("Hawaii Owl");
 		var owl = "hawaii owl";
 		var image = "<img src='https://static1.squarespace.com/static/547e86a0e4b0c76689c8ba6e/58ffc9f1bebafb65a517e693/59165069f5e2317b6a22e9e8/1494634607552/Hawaiian-owl-art-print-eve-devore.jpg?format=300w'></img>";
+		var link = "http://shvetsdecor.com";
 	};
 
 // alert("You are a " + owl);
 var questionCardsWrapper = document.getElementById("question-cards-wrapper");
-questionCardsWrapper.className = "testing";
+// questionCardsWrapper.className = "testing";
 
 var answerCard = document.createElement("div");
 answerCard.className = owl;
 // add jquery animation FadeIn or similar style
+
+// create element a, and img; append img to a, and a to answerCard. <div><a><img></></></>
 
 console.log(answerCard);
 questionCardsWrapper.appendChild(answerCard);
