@@ -86,8 +86,7 @@
     left: 33%;
     background-position: center;
     background-size: cover;
-/*    opacity: 0;
-*/    animation: fadeIn 2s;
+    animation: fadeIn 2s;
     -webkit-animation: fadein 2s;
 }
 
@@ -102,6 +101,8 @@
     z-index: 3;
     top: 48px;
     padding-left: 5%;
+    animation: fadeIn 2s;
+
 }
 
 .york {

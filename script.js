@@ -243,11 +243,31 @@ answerCardImage.className = owl;
 
 questionCardsWrapper.appendChild(answerCardLink).appendChild(answerCardImage);
 
+function capitalizeTextAnswer(str) {
+		str = str.split(" ");
+		for (var i = 0, x = str.length; i<x; i++) {
+			str[i] = str[i][0].toUpperCase() + str[i].substr(1)
+		}
+		return str.join(" ");
+	}
+
 function runTextAnswer() {
 	var textAnswer = document.createElement("div");
 	textAnswer.className = "text-answer";
-	textAnswer.innerHTML = owl;
+	var capitalizedText = capitalizeTextAnswer(owl);
+	textAnswer.innerHTML = capitalizedText;
 	answerCardLink.appendChild(textAnswer);
+
+	// function capitalizeTextAnswer(str) {
+	// 	str = str.split(" ");
+	// 	for (var i = 0, x = str.length; i<x; i++) {
+	// 		str[i] = str[i][0].toUpperCase() + str[i].substr(1)
+	// 	}
+	// 	return str.join(" ");
+	// }
+	console.log(capitalizedText);
+
+
 	//create div with innerHTML "you are" + owl (string to caps)
 	//append div to answerCardImage
 }
