@@ -57,6 +57,8 @@
     opacity: .5;
 }
 
+
+
 #question-1 {
     display: none;
 }
@@ -76,15 +78,129 @@
 
 /* Styling for Answer Card: */
 .owl {
-    height: 150px;
-    width: 150px;
-    position: center;
-/*    background-image: url("https://static1.squarespace.com/static/547e86a0e4b0c76689c8ba6e/58ffc9f1bebafb65a517e693/59165069f5e2317b6a22e9e8/1494634607552/Hawaiian-owl-art-print-eve-devore.jpg?format=300w");
-*/
-    background-color: aquamarine;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    left: 33%;
     background-position: center;
     background-size: cover;
+/*    opacity: 0;
+*/    animation: fadeIn 2s;
+    -webkit-animation: fadein 2s;
 }
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.text-answer {
+    position: absolute;
+    left: 33%;
+    z-index: 3;
+    top: 48px;
+    padding-left: 5%;
+}
+
+.york {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1541727607625-ES5Z24BXH30K3J1VX4JN/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/new-york-subway-owl-art-print-eve-devore.jpg?format=750w");
+}
+.geisha {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494633125370-CH0P9O7R1BJ9CMZW8AUZ/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/geisha-owl-art-print-eve-devore.jpg?format=750w");
+}
+.moonlight {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494633447886-NHDX0IDPZ3HRGRFKCH3W/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/moonlight-owl-art-print-eve-devore.jpg?format=750w");
+}
+.phoenix {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634741336-657GKT583F9GNP4QJW3T/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/phoenix-owl-art-print-eve-devore.jpg?format=750w");
+}
+.spartan {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494804249721-1RI6ME7NDZKKO25YSRCG/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/spartan-owl-art-print-eve-devore.jpg?format=750w");
+}
+.sailor {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634532296-YK4VG3JAQ0SB1KXS2ZOU/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/sailor-owl-art-print-eve-devore.jpg?format=750w");
+}
+.upstate {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634003014-X6CARP7K5GNPO1NQACR2/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/upstate-owl-art-print-eve-devore.jpg?format=750w");
+}
+.coffee {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634152142-SDXHUEYGQ5NJS17ZZ5SQ/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/java-bean-owl-art-print-eve-devore.jpg?format=750w");
+}
+
+.hawaii {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634603819-UM2160OP2Q8ZZA8F5KOU/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/Hawaiian-owl-art-print-eve-devore.jpg?format=750w");
+
+}
+.cozy {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494804436599-9BAEEPN2AJ6L2C646KXX/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/cozy-owl-art-print-eve-devore.jpg?format=750w");
+}
+.stormchaser {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634891484-OYEN4RD740H1IGCBR3FY/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/storm-chaser-owl-art-print-eve-devore.jpg?format=750w");
+}
+.samurai {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494632875499-M82MDOUDFFQR55P1M7MA/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/samurai-owl-art-print-eve-devore.jpg?format=750w"); 
+}
+.winter {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494806104281-J0U17COF0GW1LHNQ2GLJ/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/winter-queen-owl-art-print-eve-devore.jpg?format=750w");
+}
+.zesty {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494633363297-SQ1QII07PXUAQU3DHHI4/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/zesty-owl-art-print-eve-devore.jpg?format=750w");
+}
+.forest {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494806034599-PJ9NQKQDYF81UOIU0JOF/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/Fairy-owl-art-print-eve-devore.jpg?format=750w");
+}
+.vitruvian {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494281941455-SUESJVZW4RIZ5KXIBZZG/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/vitruvian-owl-art-print-eve-devore.jpg?format=750w");
+}
+.rainy {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494804820574-B3ISQSRJ26SHM52DY5HJ/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/rainy-day-owl-art-print-eve-devore.jpg?format=750w");
+}
+.chef {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634304999-TDY8OIN83GK0GDHZMLLZ/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/chef-owl-art-ptint-eve-devore.jpg?format=750w");
+}
+.yogi {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634083079-L12278ANS6IRIIC4L4MX/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/yogi-sage-owl-art-print-eve-devore.jpg?format=750w");
+}
+.summer {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494804721515-SIOTMRNB2JQLV3EDU0A9/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/summer-ale-owl-art-print-eve-devore.jpg?format=750w");
+}
+.owlstein {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494281716463-2CC32V1885MPBNRDPKRE/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/owlstein-owl-art-print-by-eve-devore.jpg?format=750w");
+}
+.pumpkin {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494804988050-K472O23P1DFUO7C2F6PB/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/pumpkin-owl-art-print-eve-devore.jpg?format=750w");
+}
+.pirate {
+   background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634469689-6Y67D50SMMUHAQFZ1RRW/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/pirate-owl-art-print-eve-devore.jpg?format=750w"); 
+}
+.owlpatra {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494874396455-4U1SMJPLQ5OO2RT1G75B/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/owlpatra-owl-art-print-eve-devore.jpg?format=750w");
+}
+.green {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494804458575-VP2YVJFVRA6RPOC4YVM3/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/green-feather-owl-art-print-eve-devore.jpg?format=750w");
+}
+.mermaid {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634681770-KMOKOSUQPL96RH26OBTI/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/Mermaid-owl-art-print-eve-devore.jpg?format=750w");
+}
+.celestial {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494634828666-99HMV33ZTL5MJJCCHGNW/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/celestial-owl-art-print-eve-devore.jpg?format=750w");
+}
+.nola {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1518206146211-3COPVY7TMCQBSPEM73VJ/ke17ZwdGBToddI8pDm48kCaosPw-HvRIcxOWsotBCq97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ucz6SU0sMiqc9ZaxJYij74taF2iHxk883TRi5ZHy3MFETCgV58CQKqkVi4LppNMUzA/nola-owl-art-print-eve-devore.jpg?format=750w");
+}
+.ballerina {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/547e86a0e4b0c76689c8ba6e/1494805049229-NMUF2OKMV5RNCEKDMMBZ/ke17ZwdGBToddI8pDm48kGEAVpiIsMe8oJVs4Gs-e9J7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0o8OMvY5tuV_wqZQCqqStn4YSUg8NmxIFIS4mRP1u4gaYoDAxAmgKfSBuYao_LRYBg/ballerina-owl-art-print-eve-devore.jpg?format=750w");
+}
+
+
+
+
+
+
+
+
 
 
 
